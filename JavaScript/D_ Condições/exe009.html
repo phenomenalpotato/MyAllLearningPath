@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mora onde?</title>
+
+
+</head>
+
+<body>
+    
+    <h1>Qual a sua Nacionalidade...?</h1>
+
+    Onde está morando no momento: <input type="text" id="inpTxt">
+
+    <input type="button" id="but" value="Verificar" onclick="selecionar()">
+
+    <div id="divTxt">Você é... </div>
+
+    <script>
+
+        function selecionar() {
+
+            var txtNac = window.document.getElementById('inpTxt');
+
+            var divResult = window.document.querySelector('div#divTxt');
+
+       
+            if(txtNac.value == 'Brasil') { // Para pegar o conteudo que o user passou/ escreveu, tem que invocar o atributo .value
+
+                divResult.innerHTML = 'Brasileiro';
+
+            } else {
+
+                divResult.innerHTML = `Estrangeiro, nasceu em: ${txtNac.value}`;
+
+            }
+
+    }
+
+    </script>
+
+</body>
+
+
+</html>

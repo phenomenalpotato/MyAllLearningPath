@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+
+    <style>
+
+        body{
+
+            background: rgb(0, 0, 0);
+            color: white;
+            font: normal 20pt Arial;
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+   
+    <h1>Iniciando os estudos em DOM</h1>
+
+    <p>Aqui vai o resultado</p>
+
+    <p>Aprendendo a usar o <b>DOM</b> em JavaScript.</p>
+
+    <div id="msg">Clique em mim</div> <!-- Caso eu tenha muitas Tags div, posso ser prejudicado ao usar o getElementsByTagName() que é muito generico. Posso dar 
+                            um ID para para essa div em especifico chamado "msg".-->
+
+
+    <div name="msg2"> Mama mia...</div> <!-- Dando um nome especifico para esse elemento. -->
+
+
+    <div class="msg3">Carai cachoeira!</div>
+
+    <script>
+
+        var corpo = document.body; // Selecionando a Tag body e atribuido a uma variavel para Maniupular ela.
+        
+        corpo.style.background = 'green'; // Transformando a cor do body em verde
+
+        window.document.write("Olá, Mundo!"); // Com o método write() consegue escrever texto na pagina.
+
+        window.document.write(window.document.charset); // Com o atributo charset escreve set de caracteres. Ex: UTF-8
+
+        window.document.write(window.navigator.appName); // Qual é p navegador atual.
+
+        var p1 = document.getElementsByTagName('p')[0]; // Pegando a primeira Tag <p> que aparece. Se quisesse pegar o segundo era só colocar [1] e assim por diante
+
+        p1.style.color = 'blue'; // Mudando a cor do texto de p1 para azul
+
+        document.write(p1.innerText); // Escrevendo na tela o conteudo de p1
+
+        var p2 = document.getElementsByTagName('p')[1]
+
+        document.write(p2.innerHTML) // No atributo innerText ele não consegue pegar as tags filhas que possam estar dentro de outras tags como 
+                                    // <strong> estar dentro de <p>. Por isso existe o innerHTML que consegue pegar as tags dentro de outras formatadas.
+        
+        var d = window.document.getElementById('msg'); // Selecionando minha div com ID de "msg"
+
+        d.style.background = "grey";
+
+        // d.innerText = "Estou aguardando...";
+
+        window.document.getElementById('msg').innerText = "Olá"; // Fazendo tudo sem armazenar em uma variavel, somente em uma linha.
+
+        var dd = window.document.getElementsByName('msg2')[0];
+
+        dd.innerText = "Teste";
+
+        var ddd = document.getElementsByClassName('msg3')[0];
+
+        ddd.innerText = "Man do céu";
+
+        var dddd = window.document.querySelector('div#msg') // Dentro dos parenteses se traduz para "A MINHA div QUE EU TENHO O id msg". 
+                                                            // Toda o ID é representado por um "#" e toda a Classe é representada por um "."
+
+        dddd.style.color = "purple";
+
+        var ddddd = document.querySelector('div.msg3')
+
+        ddddd.innerText = 'Oloquinho meu';
+
+        // window.document.write(window.document.baseURI); // Escreve a URI do site.
+
+        
+        
+    </script>
+
+
+</body>
+
+</html>

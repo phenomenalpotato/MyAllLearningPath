@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu quarto programa...</title>
+
+    <style>
+
+        body{
+
+            font: normal 20pt Arial; 
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <h1>Seja bem vindo!</h1>   
+
+
+    <script>
+
+        var nome = window.prompt("Qual o teu nome?");
+
+        // document.write(`Seu nome é ${nome}, e tem ${nome.length} de letras.`); // document.write() É o metodo usado para escrever no body ao inves de uma janela
+                      
+        document.writeln(`Seu nome é ${nome}, e tem ${nome.length} de letras.<br/>`)
+
+        document.write(`E seu nome em maiusculo é: ${nome.toUpperCase()} <br/>`)
+
+        document.write(`E em minusculo é: ${nome.toLowerCase()}`)
+
+        // document.write(`<h2>Seu nome é ${nome} e tem ${nome.length} de letras.<h2>`); // Tambem posso incluir tags em html dentro do Template sting
+
+    </script>
+
+</body>
+
+
+</html>

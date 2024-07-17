@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    
+    <header><h1>Analisador de Números</h1></header>
+
+    <section class="sector">
+
+        <div>
+
+            <p>Numero (entre 1 e 100)
+
+                <input type="number" class="num" min="1" max="100">
+                
+                <input type="button" class="butao" value="Adicionar" onclick="selecionar()">
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <select name="listaNum" id="selTab" size="10">
+
+                <option id="op">Digite um número acima e veja ele aparecer na lista!</option>
+
+            </select>
+
+            <p>
+
+                <input type="button" value="Finalizar" onclick="finalizar()">
+
+                <input type="button" value="Limpar" onclick="limpar()">
+
+            </p>
+
+
+
+        </div>
+
+        <div>
+
+            <p class="resul"></p>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>&copy; Meu hihihi</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

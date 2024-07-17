@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2 - Verificar a Idade</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+   
+<header>
+
+   <h1>Verificador de Idade</h1> 
+
+</header>
+
+<section>
+
+   <div class="quadro"> 
+
+    <p>Ano de Nascimento:
+        <input type="number" name="ano" id="ano" min="1900">
+
+    </p> 
+
+    <p>Sexo:
+    
+    <input type="radio" id="feminino" name="radisex" value="feminino"> <!--Os dois tipos radio que tem as mesmas opções de um conjunto (igual a esse) tem que ter o mesmo name="" pois caso ao contario o user podera selecionar os dois ao mesmo tempo e não um a cada requisição-->
+    <label for="feminino">Feminino</label>
+    
+    <input type="radio" name="radisex" id="homem" value="homem" checked> <!--Com o checked ele já começa a pag com essa bolinha selecionada e obriga a vc escolher uma ou outra-->
+    <label for="homem" value="homem">Homem</label> <br>
+
+    </p> 
+
+    <p>
+    
+        <input type="button" value="Verificar" onclick="calcular()">
+
+    </p>
+
+    <p>Preencha os dados acima para ver o resultado!</p>
+
+    <p id="res">Você tem...</p>
+
+   </div>
+
+   <!-- <div></div> -->
+
+</section>
+
+   <footer>
+
+    <p id="para1">&copy; Meu hehehe</p>
+
+   </footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

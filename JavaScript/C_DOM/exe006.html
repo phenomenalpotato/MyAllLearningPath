@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+    <style>
+
+        div#area {
+
+            background:rgb(11, 163, 11);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+
+    </style>
+
+
+</head>
+
+
+<body>
+
+    <!--<div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">Interaja...</div>-->  <!--Disparando o Evento Click no HTML. o EVENTO ONCLICK vai chamar o METODO QUE VOU CRIAR CLICAR()
+                                                        Disparando outro EVENTO COM O ONMOUSEENTER() CHAMANDO A FUNC ENTRAR()-->
+
+    <div id="area">Interaja com MUA...</div>
+
+
+    <script>
+
+        var area = window.document.getElementById('area'); // <- Fazendo a variavel area como Global.
+
+        area.addEventListener('click', clicar); // Criando 1 Listner para Captar/ Monitorar eventos do Usuário na pagina. Nesse caso será um para o CLICK, A EXECUÇÃO DO CLICAR DO USER
+
+        area.addEventListener('mouseenter', entrar); // Criando 1 Listner para Captar/ Monitorar eventos do Usuário na pagina. Nesse caso será um para o MOUSEENTER, A EXECUÇÃO DE COLOCAR O MOUSE DO USER
+
+        area.addEventListener('mouseout', sair); // Criando 1 Listner para Captar/ Monitorar eventos do Usuário na pagina. Nesse caso será um para o MOUSEOUT, A EXECUÇÃO DE TIRAR O MOUSE DO USER
+
+        function clicar(){
+            
+            window.alert("Avisos");
+
+            // var area = window.document.getElementById('area'); <- Variavel Local para a Func clicar()
+
+            area.innerText = 'Clicou!';
+
+            area.style.background = 'red';
+
+        }
+
+        function entrar() {
+
+            area.innerText = 'Entrou!'
+        }
+
+        function sair() {
+
+            area.innerText = 'Saiu!'
+
+            area.style.background = 'green'
+        }
+
+    </script>
+
+    
+</body>
+
+
+</html>

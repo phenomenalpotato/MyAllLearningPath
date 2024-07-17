@@ -1,0 +1,125 @@
+Aula 0 - Comando -file- para tentará descobrir qual é o tipo de arquivo.
+
+Caso queira que o shell procure o último comando que comece 1ue vc colocou depois do (!) e vai rodar. Por exemplo, se vc colocar;
+
+!gcc
+
+E o último comando que vc deu foi:
+
+gcc -o hello hello.c  
+
+Isso irá repetir o comando anterior do gcc. 
+
+Aula 1 - O comando -echo $?- iŕa retornar o resultado do último comando executado. Por exemplo, se eu fizer isso no shell:
+
+echo ola
+
+E depois:
+
+echo $?
+
+Ele retornará:
+
+0
+
+Isso pq o comando anterior foi executado com sucesso.
+
+Caso eu escrevesse: 
+
+12qeq
+
+E depois:
+
+echo $?
+
+Ele retornará:
+
+127
+
+Isso pq qualquer retorno diferente de 0 quer dizer que o comando anterior executou com erro ou algum tipo de anomalia.
+
+Existe um manual no Linux, que é o Linux Programmer's Manual. Por exemplo, caso queira ir para o terceiro capítulo na página da função printf:
+
+man 3 printf
+
+
+Aula 2 -  Outro programa que vc pode usar no Linux para compilar é o make. Com o programa makefile, vc pode compilar o seu código dizendo quais são as
+depêndencias dele. E só com o make, sem makefile. É só usar o comando:
+
+make nome_do_código_sem_a_extensão
+
+E ele procurar pelo o nome do arquivo, irá gerar um programa com o nome do arquivo em questão e irá chamar o cc(compilador padrão do sistema). 
+
+O view é um tipo de vim, só que ele entra em modo de leitura vc não consegue alterar o arquivo.
+
+
+ping -c1 uol.com.br && ping -c1 mentebinaria.com.br -> Neste exemplo, o segundo comando só será executado se o primeiro der certo.
+
+ping -c1 uol.com.br || ping -c1 mentebinaria.com.br -> O segundo comando só será executado caso o primeiro comando não tenha sido executado.
+
+O strace é uma ferramenta que monitora as chamadas de sistema (system calls) e os sinais recebidos pela apliacação.
+
+Aula 16
+
+Para usar uma saida de erro de um programa no terminal:
+
+comando nome-do-programa 2> nome-de-onde-quer-jogar-a-menssagem-de-erro-caso-tenha-um
+
+Por exemplo:
+
+ping www.ggle.net 2> Documentos/error.log
+
+O ping nesse caso daria erro e com isso jogaria somente a menssagem de erro no arquivo error.log.
+
+Caso existe uma outra menssagem alem do erro, somente a menssagem de erro irá ir para esse arquivo error.log, uma outra menssagem iria aparecer na tela normalmente.
+
+Aula 17
+
+Para compilar mais de um arquivo .c no GCC:
+
+gcc -o nome_do_output_do_programa nome_do_primeiro_arquivo nome_do_segundo_arquivo
+
+
+Falha de segmentação (imagem do núcleo gravada) -> É um tipo de erro especifico causado ao acessar memória que "não pertence a você."
+    - Quando um pedaço de código tenta fazer uma operação de leitura e escrita em um local de memória somente de leitura ou um bloco de memória livre,
+    é conhecido como Core Dump;
+    - É um erro indicando Memory Corruption; 
+
+Visual C++ para compilar programas em C e C++ em ambientes Windows;
+
+Para executar somente a parte de Preprocessamento: 
+    gcc -E main.c  -o main.i
+
+Para definir uma MACRO como um argumento para o gcc pela a linha de comando:
+    gcc -D 'MOME_DA_MACRO' -E main.c -o main.i
+
+O compilador não inclui nenhum arquivo, ele espera que quem faça isso seja o Pre Processador.
+
+Igual ao compilador e o Pre Processor, o Compilador e o Linker são dois passos diferentes e eles não precisam serem combinados. Nós podemos falar para 
+o compilador compilar sem linkar. O compilador irá gerar um Object File (que e basicamente o resultado da compilação) 
+que ficará esperando a etapa de fazer o Link. Nós não podemos executar Object Files, nós precisamos que eles sejam linkados juntos para formares um executável.
+
+    - O linker só precisa dos Object Files para gerar o Executável;
+    - O Compilador precisa dos Source Files para gerar os Object Files;
+
+Isso quer dizer que você só precisa gerar os Object Files e fazer com que outra pessoa faça a parte do Linker, isso pode prevenir de você ter que ficar 
+mandando o seus Source Files por aí! 
+
+Se você compilar mais de um source File de uma vez, o compilador irá gerar um só Object File por Source File.
+
+gcc -c main.c multiply.c
+
+Na etapa do Linker, ele irá ter que verificar se as referencias nos Object Files estão certas, resolver nomes e dependencias.  
+
+Para linkar dois ou mais Object Files no gcc:
+
+gcc main.o multiply.o -o main
+
+Sem um inicializador, a variável tem um valor indefinido ou inprevissível. Isso pode ser aceitavel, mas pode ser uma caracteristica comum de varios tipos de bugs
+e se você se esquecer de inicializar a variavel e acidentalmente pode levar a vários tipos de exploits. Dessa maneira você pode evitar que dados não incializados 
+fiquem vagando pelo o seu programa. 
+
+
+Nós não precisamos depender de incializador padrão para variáveis estáticas, elas já são inicializadas com 0 pelo o compilador.
+
+Em C, o compilador espera que uma variável static seja inicializada com um valor CONSTANTE, e não um valor VARIÁVEL.

@@ -1,0 +1,38 @@
+body {
+
+    background-color: rgb(79, 79, 226);
+}
+
+p {
+
+    font: 25px bold Arial;
+}
+
+h1 {
+
+    font: 60px Arial;
+    text-align: center;
+    color: white;
+}
+
+.secCenter {
+
+    width: 50%;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600; /*Quao negrito a fonte sera*/
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.342); /*Colocando um sombreamento na caixa*/
+
+}
+
+footer {
+
+    text-align: center;
+    color: white;
+}

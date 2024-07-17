@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu terceiro programa...</title>
+
+    <style>
+
+        body {
+
+            background-color: rgb(94, 190, 94);
+        }
+
+        h1 {
+
+            color: yellow;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+    
+
+    <h1>Parabens!</h1>
+
+
+
+    <script>
+
+        var n1 = Number(window.prompt("Digite o primeiro número:")); // O método window.prompt() retorna uma String
+
+        var n2 = Number.parseFloat(window.prompt("Digite o segundo número:"));
+
+        var soma = n1 + n2; 
+        
+        // O Operador (+) tem efeito de Concatenção e de somar. Mas algumas vezes pode surgir uma dúvida qual deve ser usado, o de 
+        // Concatenção ou de Soma. Para forçar o uso do de Soma, deve ser um Number de um lado da soma e outro Number do outro lado da operação.
+        // Para ser considerado uma Concatenação deve ser um lado uma String e do outro lado da operação outra String.
+
+        /* Para converter de uma String para um Number: 
+        
+        Number.parseInt() Ou
+        parseInt() De String para Numero Inteiro
+        
+        Number.parseFloat() Ou
+        parseFloat() De String para Numero Real
+
+        Number() Esse Metodo o JS decidira se irá converter para Float ou Int. 
+        Se eu quiser forçar que seja tratado/ Convertido para Inteiro ou Real tem que usar o parseInt() ou o parseFloat()
+        
+        */
+
+        /* Para Converter de Number para String:
+        
+        String(n)
+
+        n.toString => n sendo o Number ou algo que eu queira converter 
+
+        */
+
+        window.alert('A soma dos valores é: ' + soma); 
+
+        window.alert(`A soma de ${n1} + ${n2} é: ${soma}`);
+        
+    </script>
+
+</body>
+
+
+</html>
