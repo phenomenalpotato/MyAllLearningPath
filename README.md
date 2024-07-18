@@ -12,6 +12,6 @@ As I lean more about JavaScript, this Repo will get more links and content.
 - [C Path](https://github.com/phenomenalpotato/MyAllLearningPath/tree/main/C)
 - [Database Path](https://github.com/phenomenalpotato/MyAllLearningPath/tree/main/Database)
 - [JavaScript Path](https://github.com/phenomenalpotato/MyAllLearningPath/tree/main/JavaScript)
-- [MakeFile](https://github.com/phenomenalpotato/MyAllLearningPath/tree/main/MakeFile)
+- [MakeFile Path](https://github.com/phenomenalpotato/MyAllLearningPath/tree/main/MakeFile)
 
 ---
