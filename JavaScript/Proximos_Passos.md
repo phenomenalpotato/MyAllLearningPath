@@ -9,6 +9,8 @@
 - Estudar AJAX;
 - Estudar NodeJS;
 - Estudar + Arrays; -> Map, Filter, Reduce, Sort etc.
+- Estudar Promises;
+- Estudar Clouseres;
 
   - Projetos para o Modulo Intermediário:
     Fazer uma Calculadora; Hora de Codar tem um video como fazer uma;
