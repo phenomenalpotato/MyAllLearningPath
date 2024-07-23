@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordem de Apresentação</title>
+
+</head>
+
+<body>
+    
+    <header><h1>Qual será a ordem de apresentação dos 4 Alunos</h1></header>
+
+    <div>
+
+        <p> Qual o nome do Primeiro Aluno:
+
+            <input type="text" class="aluno1">
+
+        </p>
+
+        <p> Qual o nome do Segundo Aluno:
+
+            <input type="text" class="aluno2">
+
+        </p>
+
+        <p> Qual o nome do Terceiro Aluno:
+
+            <input type="text" class="aluno3">
+
+        </p>
+
+        <p> Qual o nome do Quarto Aluno:
+
+            <input type="text" class="aluno4">
+
+        </p>
+
+        <input type="button" value="Advinhar" onclick="advinhar()">
+
+    </div>
+
+    <p class="resul"></p>
+
+    <script>
+
+        function arrayShuffle(array) {
+            if (!Array.isArray(array)) {
+                throw new TypeError(`Expected an array, got ${typeof array}`);
+            }
+
+            array = [...array];
+
+            for (let index = array.length - 1; index > 0; index--) {
+                const newIndex = Math.floor(Math.random() * (index + 1));
+                [array[index], array[newIndex]] = [array[newIndex], array[index]];
+            }
+
+            return array;
+        }
+
+        let valorAluno = document.querySelector('input.aluno1');
+
+        let valorAluno2 = document.querySelector('input.aluno2');
+
+        let valorAluno3 = document.querySelector('input.aluno3');
+
+        let valorAluno4 = document.querySelector('input.aluno4');
+
+        let resul = document.querySelector('p.resul');
+
+        function advinhar() {
+
+            const listaDeAlunos = [valorAluno.value, valorAluno2.value, valorAluno3.value, valorAluno4.value];
+
+            resul.innerHTML = `A ordem de Apresentação é: ${arrayShuffle(listaDeAlunos)}`;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
