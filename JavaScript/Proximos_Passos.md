@@ -13,8 +13,9 @@
 - Estudar Clouseres;
 
   - Projetos para o Modulo Intermediário:
-    Fazer uma Calculadora; Hora de Codar tem um video como fazer uma;
-    Fazer Um To-Do List - Uma lista de tarefas. Cadastrando uma tarefa, listar e ordenar essas tarefas. Canal do Will Dev tem um exemplo
+    Fazer um Jogo da Velha ou uma Calculadora; Hora de Codar tem um video como fazer uma;
+    Fazer uma aplicação CRUD: Fazer Um To-Do List - Uma lista de tarefas. Cadastrando uma tarefa, listar e ordenar essas tarefas. Canal do Will Dev tem um exemplo;
+    Fazer Um e-comerce e um TOY COMPILER;
 
 ## Estudos Avaçados:
 
