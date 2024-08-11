@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/JS Exercicios/Exercise/Maior_e_Menor_Peso/Node/maior_e_menor_peso.js",
+            "program": "${workspaceFolder}/JS Exercicios/Exercise/Tratando_Varios_Valores/Node/trantando_valores.js",
             "console": "integratedTerminal"
         }
     ]
