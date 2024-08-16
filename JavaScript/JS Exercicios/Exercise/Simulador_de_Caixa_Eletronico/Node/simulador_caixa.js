@@ -12,7 +12,7 @@ let notas1 = 0;
 
 let sobraOperacao = 0;
 
-if (saqueUser / 50 > 1 ) {
+if (saqueUser / 50 >= 1) {
 
     sobraOperacao = saqueUser % 50;
 
@@ -61,7 +61,7 @@ console.log('--------------------==============================');
 
 // ================================================================= Correção com o WHILE -> 
 
-let total = saqueUser;
+let total = saqueUser; // 100
 
 let cedula = 50;
 
