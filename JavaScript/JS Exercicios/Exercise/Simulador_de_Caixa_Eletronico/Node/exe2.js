@@ -131,38 +131,59 @@
 
 // }
 
-let lanche = ['Hambúrguer', 'Suco', 'Pizza', 'Pudim'];
+// let lanche = ['Hambúrguer', 'Suco', 'Pizza', 'Pudim'];
 
-console.log(`${lanche.slice(1, 4)}`);
+// console.log(`${lanche.slice(1, 4)}`);
 
-lanche[3] = 'Alface'
+// lanche[3] = 'Alface'
 
-console.log(`${lanche.slice(1, 4)}`);
+// console.log(`${lanche.slice(1, 4)}`);
 
-for (let comida in lanche) {
+// for (let comida in lanche) {
 
-    console.log(`Eu vou comer ${lanche[comida]} agora! Na posição ${comida}`);
-} 
+//     console.log(`Eu vou comer ${lanche[comida]} agora! Na posição ${comida}`);
+// } 
 
-console.log('---------==================');
+// console.log('---------==================');
 
-for (comida of lanche.toSorted((a, b) => a.localeCompare(b))) {
+// for (comida of lanche.toSorted((a, b) => a.localeCompare(b))) {
 
-    console.log(`Eu vou comer ${comida} nesse momento!`);
-}
+//     console.log(`Eu vou comer ${comida} nesse momento!`);
+// }
 
-console.log('---------==================');
+// console.log('---------==================');
 
-let a = [2, 5, 4];
+// let a = [2, 5, 4];
 
-let b = [5, 8, 1,'All'];
+// let b = [5, 8, 1,'All'];
 
-let c = a + b;
+// let c = a + b;
 
-console.log(`${a}, ${b} ----> ${c}`);
+// console.log(`${a}, ${b} ----> ${c}`);
 
 // delete b[3];
 
-b.splice(3);
+// b.splice(3);
 
-console.log(`${b}`);
+// console.log(`${b}`);
+
+let num = [2, 5, 9, 1];
+
+num[2] = 3;
+
+num[4] = 8
+
+num.sort()
+
+num.reverse()
+
+console.log(num)
+
+num.pop()
+
+console.log(num.length, num)
+
+for (numeros in num) {
+
+    console.log(`Na posição ${numeros} encontrei o valor ${num[numeros]}`);
+}

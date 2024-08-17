@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/JS Exercicios/Exercise/Simulador_de_Caixa_Eletronico/Node/exe2.js",
+            "program": "${workspaceFolder}/JS Exercicios/Exercise/Contando_Vogais_em_Array/Node/vogais_array.js",
             "console": "integratedTerminal"
         }
     ]
