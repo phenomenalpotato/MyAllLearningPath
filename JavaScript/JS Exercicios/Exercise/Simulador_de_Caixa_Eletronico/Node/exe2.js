@@ -1,4 +1,4 @@
-// const prompt = require('prompt-sync')();
+const prompt = require('prompt-sync')();
 
 // // // Criar um programa que deixe o usuario sacar um determinado valor no caixa com notas de 200, 100, 50, 20, 10, 5, 2
 
@@ -167,23 +167,72 @@
 
 // console.log(`${b}`);
 
-let num = [2, 5, 9, 1];
+// let num = [2, 5, 9, 1];
 
-num[2] = 3;
+// num[2] = 3;
 
-num[4] = 8
+// num[4] = 8
 
-num.sort()
+// num.sort()
 
-num.reverse()
+// num.reverse()
 
-console.log(num)
+// console.log(num)
 
-num.pop()
+// num.pop()
 
-console.log(num.length, num)
+// console.log(num.length, num)
 
-for (numeros in num) {
+// for (numeros in num) {
 
-    console.log(`Na posição ${numeros} encontrei o valor ${num[numeros]}`);
+//     console.log(`Na posição ${numeros} encontrei o valor ${num[numeros]}`);
+// }
+
+// let teste = [];
+
+// teste.push('Gustavo');
+
+// teste.push(40);
+
+// let galera = [];
+
+// galera.push(teste.slice());
+
+// teste[0] = 'Maria';
+
+// teste[1] = 22;
+
+// galera.push(teste.slice());
+
+// let galera = [['João', 19], ['Ana', 33], ['Joaquim', 13], ['Maria', 45]];
+
+// console.log(`${galera} --- ${galera[2][1]}`);
+
+let galera = [];
+
+let dados = [];
+
+for (let cont = 0; cont < 3; cont++) {
+
+    dados.push(prompt('Qual o nome: '));
+
+    dados.push(prompt('Qual a idade: '));
+
+    galera.push(dados.slice());
+
+    dados.splice(0, 2);
+
+    // console.log(`${dados}`)
+}
+
+// console.log(`${galera}`)
+
+for (let pessoa of galera) {
+
+    if (pessoa[1] > 21) {
+
+        console.log(`${pessoa[0]} tem ${pessoa[1]} anos`);
+    }
+
+    // console.log(`${pessoa}`)
 }

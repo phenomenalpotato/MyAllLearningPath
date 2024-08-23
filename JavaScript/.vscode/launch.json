@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/JS Exercicios/Exercise/Contando_Vogais_em_Array/Node/vogais_array.js",
+            "program": "${workspaceFolder}/JS Exercicios/Exercise/Array_Ordenado_Sem_Repeticoes/Node/array_ordenado.js",
             "console": "integratedTerminal"
         }
     ]
