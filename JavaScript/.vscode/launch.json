@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/JS Exercicios/Exercise/Array_Ordenado_Sem_Repeticoes/Node/array_ordenado.js",
+            "program": "${workspaceFolder}/JS Exercicios/Exercise/Palpites_para_a_Mega_Sena/Node/mega_sena.js",
             "console": "integratedTerminal"
         }
     ]
