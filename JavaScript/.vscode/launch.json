@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/JS Exercicios/Exercise/Palpites_para_a_Mega_Sena/Node/mega_sena.js",
+            "program": "${workspaceFolder}/JS Exercicios/Exercise/Jogo_de_Dados/Node/jogo_dado.js",
             "console": "integratedTerminal"
         }
     ]
