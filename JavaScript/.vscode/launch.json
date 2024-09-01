@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/JS Exercicios/Exercise/Jogo_de_Dados/Node/jogo_dado.js",
+            "program": "${workspaceFolder}/JS Exercicios/Exercise/Cadastro_de_Trabalhador/Node/cadastro.js",
             "console": "integratedTerminal"
         }
     ]
