@@ -309,24 +309,24 @@ pessoas.set("idade", 22);
 
 // console.log(brasil[0].get("uf"), brasil[1].get("sigla"));
 
-let estado = new Map();
+// let estado = new Map();
 
-let brasil = new Array();
+// let brasil = new Array();
 
-for (let cont = 0; cont < 3; cont++ ) {
+// for (let cont = 0; cont < 3; cont++ ) {
 
-    // estado.set("uf", prompt('Unidade Federativa: '));
-    estado.set("sigla", prompt('Sigla do Estado: '));
+//     // estado.set("uf", prompt('Unidade Federativa: '));
+//     estado.set("sigla", prompt('Sigla do Estado: '));
 
-    // estado["sigla"] = [prompt('Sigla do Estado: ')];
+//     // estado["sigla"] = [prompt('Sigla do Estado: ')];
 
-    brasil.push(estado.values());
-    brasil.push(estado.keys())
+//     brasil.push(estado.values());
+//     brasil.push(estado.keys())
 
-    // estado.delete("sigla");
-}
+//     // estado.delete("sigla");
+// }
 
-console.log(brasil);
+// console.log(brasil);
 
 // for (let estados of brasil) {
 
@@ -334,3 +334,44 @@ console.log(brasil);
 
 //     console.log(estados);
 // }
+
+// function soma(a=0, b=0) {
+
+//     console.log(`A = ${a} e B = ${b}`)
+//     let s = a + b
+    
+//     return(s)
+// }
+
+// soma(4,5)
+// soma(8,9)
+// soma(b=2,a=1) // não funciona 
+// soma(2)
+
+
+
+// function contador(...num) {
+
+//     // for(let n of num) {
+
+//     //     console.log(n);
+//     // }
+
+//     console.log(`Recebi nessa chamada os valores ${num}`);
+// }
+
+// contador(2,1,7)
+// contador(1,2)
+// contador(1,2,6,8,10,1000)
+
+
+function dobra(item, index, arr) {
+
+    arr[index] = item * 2
+}
+
+let valores = [6,3,9,1,0,2];
+
+valores.forEach(dobra)
+
+console.log(valores);

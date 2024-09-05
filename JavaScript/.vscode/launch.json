@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/JS Exercicios/Exercise/Cadastro_de_Trabalhador/Node/cadastro.js",
+            "program": "${workspaceFolder}/JS Exercicios/Exercise/Aprimorando_os_Mapas/Node/aprimorando.js",
             "console": "integratedTerminal"
         }
     ]
