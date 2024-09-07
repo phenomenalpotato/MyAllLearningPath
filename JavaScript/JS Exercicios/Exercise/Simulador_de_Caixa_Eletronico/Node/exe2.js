@@ -365,13 +365,13 @@ pessoas.set("idade", 22);
 // contador(1,2,6,8,10,1000)
 
 
-function dobra(item, index, arr) {
+// function dobra(item, index, arr) {
 
-    arr[index] = item * 2
-}
+//     arr[index] = item * 2
+// }
 
-let valores = [6,3,9,1,0,2];
+// let valores = [6,3,9,1,0,2];
 
-valores.forEach(dobra)
+// valores.forEach(dobra)
 
-console.log(valores);
+// console.log(valores);

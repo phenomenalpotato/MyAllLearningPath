@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/JS Exercicios/Exercise/Aprimorando_os_Mapas/Node/aprimorando.js",
+            "program": "${workspaceFolder}/JS Exercicios/Exercise/Funcoes_para_Sortear_e_Somar/Node/sortear_somar.js",
             "console": "integratedTerminal"
         }
     ]
