@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes</title>
+</head>
+<body>
+
+    <p id="user"></p>
+
+    <script>
+
+        let s = '{"first_name": "Sammy", "last_name": "Shark", "location": "Ocean"}'
+
+        let obj = JSON.parse(s);
+
+        document.getElementById("user").innerHTML = "Name: " + obj.first_name + " " + obj.last_name + "<br>" +
+        "Location: " + obj.location;
+
+    </script>
+    
+</body>
+</html>
