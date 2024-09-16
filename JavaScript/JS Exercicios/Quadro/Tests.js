@@ -1,4 +1,4 @@
-const prompt = require('./Exercise/Analisador_Texto/Node/node_modules/prompt-sync')();
+// const prompt = require('./Exercise/Analisador_Texto/Node/node_modules/prompt-sync')();
 
 // // // Criar um programa que deixe o usuario sacar um determinado valor no caixa com notas de 200, 100, 50, 20, 10, 5, 2
 
@@ -497,12 +497,12 @@ const prompt = require('./Exercise/Analisador_Texto/Node/node_modules/prompt-syn
 
 // console.log(user.full_name(), user.online);
 
-let sammy = {
+// let sammy = {
 
-    "first_name": "Sammy",
-    "last_name" : "shark",
-    "online"    : true
-}
+//     "first_name": "Sammy",
+//     "last_name" : "shark",
+//     "online"    : true
+// }
 
 // console.log(sammy.first_name, sammy.last_name, sammy["online"]);
 
@@ -617,56 +617,75 @@ let sammy = {
 
 // console.log(sammyEx2.websites[1].URL + " - " + sammyEx2.social_media[2].link)
 
-function jogadoreDic (nomeJ, golsJ, timesJ=0) {
+// function jogadoreDic (nomeJ, golsJ, timesJ=0) {
 
-    let tempJ = new Map;
+//     let tempJ = new Map;
 
-    tempJ.set("nome", nomeJ);
+//     tempJ.set("nome", nomeJ);
 
-    tempJ.set("gols", golsJ);
+//     tempJ.set("gols", golsJ);
 
-    tempJ.set("times", timesJ);
+//     tempJ.set("times", timesJ);
 
-    return tempJ;
+//     return tempJ;
 
-}
+// }
 
-let jogadores = new Map;
+// let jogadores = new Map;
 
-let jogadoresArray = [];
+// let jogadoresArray = [];
 
-while (true) {
+// while (true) {
 
-    let nome = prompt('Qual o nome do Jogador: ');
+//     let nome = prompt('Qual o nome do Jogador: ');
 
-    let gols = Number(prompt('Quantos gols o jogador fez: '));
+//     let gols = Number(prompt('Quantos gols o jogador fez: '));
 
-    let times = new Array;
+//     let times = new Array;
 
-    while (true) {
+//     while (true) {
 
-        times.push(prompt('Nome do Time: '));
+//         times.push(prompt('Nome do Time: '));
 
-        let desicaoUser = prompt('O jogador jogou em mais um time? Sim ou Não: ').trim().charAt(0).toUpperCase();
+//         let desicaoUser = prompt('O jogador jogou em mais um time? Sim ou Não: ').trim().charAt(0).toUpperCase();
 
-        if (desicaoUser == 'N') {
+//         if (desicaoUser == 'N') {
     
-            break;
-        }
-    }
+//             break;
+//         }
+//     }
 
-    // jogadores.set(`jogador${nome}`, jogadoreDic(nome, gols, times));
+//     // jogadores.set(`jogador${nome}`, jogadoreDic(nome, gols, times));
 
-    jogadoresArray.push(jogadoreDic(nome, gols, times));
+//     jogadoresArray.push(jogadoreDic(nome, gols, times));
 
-    let desicaoUser = prompt('Quer criar mais um jogador? Sim ou Não: ').trim().charAt(0).toUpperCase();
+//     let desicaoUser = prompt('Quer criar mais um jogador? Sim ou Não: ').trim().charAt(0).toUpperCase();
 
-    if (desicaoUser == 'N') {
+//     if (desicaoUser == 'N') {
 
-        jogadores.set("jogadores", jogadoresArray.slice());
+//         jogadores.set("jogadores", jogadoresArray.slice());
 
-        break;
-    }
-}
+//         break;
+//     }
+// }
 
-console.log(jogadores);
+// console.log(jogadores);
+
+
+const {fatorial, dobro} = require('./uteis'); // Só funciona com o module.exports no módulo
+
+// import { fatorial } from "./uteis.js" // Só funciona com o exports na função no modulo 
+
+// let numero = Number(prompt('Digite um número: '));
+
+// let fat = fatorial(5)
+
+let fat = fatorial(5);
+
+let dome = dobro(4);
+
+console.log(fat, dome);
+
+// console.log(`O fatorial de ${numero} é ${fat}`);
+
+// console.log(`O triplo de ${numero} é ${triplo(numero)} e o dobro é ${dobro(numero)}`);
