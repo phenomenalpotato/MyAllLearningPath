@@ -14,7 +14,7 @@ export function aumentar (num = 0, taxa = 0, formatacao = false) {
 
 export function diminuir (num = 0, taxa = 0, formatacao = false) {
 
-    let res = ((taxa/100) * num) - num;
+    let res = num - ((taxa/100) * num);
 
     if (formatacao) {
 

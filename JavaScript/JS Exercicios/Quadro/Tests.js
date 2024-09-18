@@ -672,7 +672,7 @@
 // console.log(jogadores);
 
 
-const {fatorial, dobro} = require('./uteis'); // Só funciona com o module.exports no módulo
+// const {fatorial, dobro} = require('./uteis'); // Só funciona com o module.exports no módulo
 
 // import { fatorial } from "./uteis.js" // Só funciona com o exports na função no modulo 
 
@@ -680,12 +680,24 @@ const {fatorial, dobro} = require('./uteis'); // Só funciona com o module.expor
 
 // let fat = fatorial(5)
 
-let fat = fatorial(5);
+// let fat = fatorial(5);
 
-let dome = dobro(4);
+// let dome = dobro(4);
 
-console.log(fat, dome);
+// console.log(fat, dome);
 
 // console.log(`O fatorial de ${numero} é ${fat}`);
 
 // console.log(`O triplo de ${numero} é ${triplo(numero)} e o dobro é ${dobro(numero)}`);
+
+try {
+
+    console.log(r)
+    
+} catch (error) {
+    
+    console.log('Infelizmente tivemos um problema :(', error);
+} finally {
+
+    console.log('Volte sempre!');
+}
