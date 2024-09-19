@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/JS Exercicios/Tests.js",
+            "program": "${workspaceFolder}/JS Exercicios/Exercise/Funcoes_Aprofundados/Node/funcoes_aprofundadas",
             "console": "integratedTerminal"
         }
     ]
