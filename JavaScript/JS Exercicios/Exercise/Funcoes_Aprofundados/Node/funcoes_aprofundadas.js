@@ -4,7 +4,7 @@ function leiaInt(msg) {
 
     try {
 
-        let num = prompt(msg).trim();
+        // let num = prompt(msg).trim();
 
         while(true) {
 
@@ -84,3 +84,5 @@ let valorInt = leiaInt('Digite um número Inteiro: ');
 let valorFloat = leiaFlot('Digite um número Real: ');
 
 console.log(`O valor Inteiro digitado foi ${valorInt} e o valor Real foi ${valorFloat}`);
+
+module.exports = {leiaInt, leiaFlot};
