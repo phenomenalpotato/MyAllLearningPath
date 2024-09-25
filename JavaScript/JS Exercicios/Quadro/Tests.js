@@ -690,14 +690,17 @@
 
 // console.log(`O triplo de ${numero} é ${triplo(numero)} e o dobro é ${dobro(numero)}`);
 
-try {
+// try {
 
-    console.log(r)
+//     console.log(r)
     
-} catch (error) {
+// } catch (error) {
     
-    console.log('Infelizmente tivemos um problema :(', error);
-} finally {
+//     console.log('Infelizmente tivemos um problema :(', error);
+// } finally {
 
-    console.log('Volte sempre!');
-}
+    // console.log(this);
+// }
+
+// var a = "Hi";
+
