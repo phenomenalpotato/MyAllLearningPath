@@ -702,5 +702,19 @@
     // console.log(this);
 // }
 
-// var a = "Hi";
+b();
 
+console.log(a + " <- A")
+
+var a = "Hi";
+
+function b() {
+
+    console.log("called b!")
+
+    console.log(a + " <- A")
+}
+
+console.log(c + " <- C")
+
+let c = 10;
