@@ -702,19 +702,15 @@
     // console.log(this);
 // }
 
-b();
+var a = 'Hi';
 
-console.log(a + " <- A")
+console.log(a);
 
-var a = "Hi";
+a = undefined;
 
-function b() {
+if (a === undefined) {
 
-    console.log("called b!")
-
-    console.log(a + " <- A")
+    console.log('a is undefined!');
+} else {
+    console.log('a is defined!');
 }
-
-console.log(c + " <- C")
-
-let c = 10;
