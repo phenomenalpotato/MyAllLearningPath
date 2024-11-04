@@ -1,12 +1,11 @@
 #include <stdio.h>
 
-int oi = 23;
-
 int main(void)
 {
-    printf("asdsadsadsad %d - %d\n", num, oi);
 
-    int num = 10;
+    printf("Here %d - %d\n", num); // < -Tentando acessar a variável 'num' antes de ter declarado ela
+
+    int num = 10; // < -Declaração da variável 'num'
 
     return 0;
 }
